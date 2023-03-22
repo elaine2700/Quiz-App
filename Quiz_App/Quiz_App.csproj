@@ -11,5 +11,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
+    <Folder Include="wwwroot\data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\data\" />
   </ItemGroup>
 </Project>

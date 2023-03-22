@@ -1,0 +1,97 @@
+﻿[
+  {
+    "Title": "Quiz Title ",
+    "Questions": {
+      "Q1": {
+        "question": "Hello",
+        "answers": {
+          "a1": "answer 1",
+          "a2": "answer 2",
+          "a3": "answer 3"
+        }
+      },
+      "Q2": {
+        "question": "Hello",
+        "answers": {
+          "a1": "answer 1",
+          "a2": "answer 2",
+          "a3": "answer 3"
+        }
+      },
+      "Q3": {
+        "question": "Is this interesting",
+        "answers": {
+          "a1": "answer 1",
+          "a2": "answer 2",
+          "a3": "answer 3"
+        }
+      }
+    },
+    "img": "https://user-images.githubusercontent.com/41929050/61567052-13938600-aa33-11e9-9a88-cd842073ba44.jpg"
+  },
+
+  {
+    "Title": "Quiz Title 2",
+    "Questions": {
+      "Q1": {
+        "question": "Hello",
+        "answers": {
+          "a1": "answer 1",
+          "a2": "answer 2",
+          "a3": "answer 3"
+        }
+      },
+      "Q2": {
+        "question": "How are you gonna finish on time",
+        "answers": {
+          "a1": "answer 1",
+          "a2": "answer 2",
+          "a3": "answer 3"
+        }
+      },
+      "Q3": {
+        "question": "Hello",
+        "answers": {
+          "a1": "answer 1",
+          "a2": "answer 2",
+          "a3": "answer 3"
+        }
+      }
+    },
+    "img": "https://user-images.githubusercontent.com/41929050/61567052-13938600-aa33-11e9-9a88-cd842073ba44.jpg"
+  },
+
+  {
+    "Title": "Quiz Title 3",
+    "Questions": {
+      "Q1": {
+        "question": "This is my question",
+        "answers": {
+          "a1": "answer 1",
+          "a2": "answer 2",
+          "a3": "answer 3"
+        }
+      },
+      "Q2": {
+        "question": "The question of the month",
+        "answers": {
+          "a1": "answer 1",
+          "a2": "answer 2",
+          "a3": "answer 3"
+        }
+      },
+      "Q3": {
+        "question": "The question of the day",
+        "answers": {
+          "a1": "answer 1",
+          "a2": "answer 2",
+          "a3": "answer 3"
+        }
+      }
+    },
+    "img": "https://user-images.githubusercontent.com/41929050/61567052-13938600-aa33-11e9-9a88-cd842073ba44.jpg"
+  }
+
+
+]
+
