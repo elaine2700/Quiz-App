@@ -1,33 +1,33 @@
 ﻿[
   {
-    "Title": "Quiz Title ",
+    "Title": "CSS",
     "Questions": [
       {
-        "question": "Hello",
+        "question": "What does CSS stand for?",
         "answers": [
-          "a1",
-          "a2",
-          "a3"
+          "Computer Style Sheets",
+          "Cascading Style Sheets",
+          "Creative Style Sheets"
         ],
         "correct": 1
       },
       {
-        "question": "Hello 2",
+        "question": "Where in an HTML document is the correct place to refer to an external style sheet?",
         "answers": [
-          "answer 1",
-          "answer 2",
-          "answer 3"
+          "At the end of the document",
+          "In the <head> section",
+          "In the <body> section"
         ],
-        "correct": 3
+        "correct": 1
       },
       {
-        "question": "Is this interesting?",
+        "question": "Which HTML tag is used to define an internal style sheet?",
         "answers": [
-          "answer 1",
-          "answer 2",
-          "answer 3"
+          "<style>",
+          "<css>",
+          "<script>"
         ],
-        "correct": 2
+        "correct": 0
       }
 
     ],
@@ -35,34 +35,34 @@
   },
 
   {
-    "Title": "Quiz Title 2",
+    "Title": "HTML",
     "Questions": [
       {
-        "question": "Hello",
+        "question": "What does HTML stand for?",
         "answers": [
-          "Is this an answer?",
-          "Answer me!",
-          "No"
+          "Home Tool Markup Language",
+          "Hyper Text Markup Language",
+          "Hyperlinks and Text Markup Language"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Choose the correct HTML element for the largest heading:",
+        "answers": [
+          "<heading>",
+          "<h6>",
+          "<h1>"
         ],
         "correct": 2
       },
       {
-        "question": "Hello",
+        "question": "How can you make a numbered list?",
         "answers": [
-          "answer 1",
-          "answer 2",
-          "answer 3"
+          "<list>",
+          "<ol>",
+          "<ul>"
         ],
-        "correct": 3
-      },
-      {
-        "question": "Is this interesting?",
-        "answers": [
-          "answer 1",
-          "answer 2",
-          "answer 3"
-        ],
-        "correct": 2
+        "correct": 1
       }
 
     ],
@@ -70,34 +70,34 @@
   },
 
   {
-    "Title": "Quiz Title 3",
+    "Title": "Javascript",
     "Questions": [
       {
-        "question": "Hello",
+        "question": "Inside which element do we put the Javascript?",
         "answers": [
-          "a1",
-          "a2",
-          "a3"
+          "<js>",
+          "<javascript>",
+          "<script>"
         ],
         "correct": 1
       },
       {
-        "question": "Hello",
+        "question": "How do you create a function in Javascript?",
         "answers": [
-          "answer 1",
-          "answer 2",
-          "answer 3"
+          "function:myFunction()",
+          "function = myFunction()",
+          "function myFunction()"
         ],
         "correct": 1
       },
       {
-        "question": "Is this interesting?",
+        "question": "How does a WHILE loop start?",
         "answers": [
-          "answer 1",
-          "answer 2",
-          "answer 3"
+          "while ( i <= 10)",
+          "while i = 1 to 10",
+          "while(i <= 10; i++"
         ],
-        "correct": 2
+        "correct": 0
       }
 
     ],
