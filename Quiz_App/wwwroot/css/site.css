@@ -55,8 +55,20 @@ body {
 .img-container{
     width: 200px;
     aspect-ratio: 1/1;
-    background-color: aquamarine;
+    background-color: black;
+    position: relative;
 }
+
+    .img-container > div {
+        color: white;
+        font-weight: 900;
+        font-size: 3rem;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        margin: auto;
+        transform: translate(-50%, -50%);
+    }
 
 .items-list a {
     padding: 0.5em;
