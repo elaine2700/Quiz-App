@@ -1,11 +1,22 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home";
+    
 }
+
+@using Quiz_App.Models
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div class="items-list">
+        @foreach (Quiz quiz in Model.quizzes)
+        {
+            <div>
+                <h2>@quiz.Title</h2>
+                <div class="img-container"></div>
+                <a asp-page="/QuizPage">Answer Quiz</a>
+            </div>
+        }
+    </div>
 </div>
 

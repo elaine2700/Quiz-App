@@ -2,6 +2,10 @@
   font-size: 14px;
 }
 
+a {
+    display:block;
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -16,3 +20,37 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.items-list{
+    color: white;
+    display:flex;
+    gap: 1em;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    .items-list > * {
+        background-color: black;
+        border-radius: 10px;
+        
+    }
+
+.img-container{
+    width: 200px;
+    aspect-ratio: 1/1;
+    background-color: aquamarine;
+}
+
+.items-list a {
+    padding: 0.5em;
+    transition-duration: 0.5s;
+}
+    .items-list a:hover {
+        background-color: gray;
+        transition-duration: 0.5s;
+    }
+    .items-list a:active {
+        background-color: lightgray;
+        transition-duration: 0.5s;
+    }
