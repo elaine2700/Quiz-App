@@ -8,7 +8,7 @@ namespace Quiz_App.Pages;
 public class IndexModel : PageModel
 {
     private readonly ILogger<IndexModel> _logger;
-    public IEnumerable<Quiz>? quizzes { get; set; }
+    public List<Quiz> quizzes { get; set; }
     public JSONFileQuizService QuizService { get; private set; }
     
 
@@ -18,14 +18,19 @@ public class IndexModel : PageModel
     public IndexModel(ILogger<IndexModel> logger, JSONFileQuizService _quizService)
     {
         _logger = logger;
-        quizzes = new List<Quiz>();
         QuizService = _quizService;
+        quizzes = new List<Quiz>();
     }
 
     public void OnGet()
     {
-        quizzes = QuizService.GetQuizData();
-        if (quizzes == null) quizzes = new List<Quiz>();
+        var temp = QuizService.GetQuizData();
+        if (temp == null) return;
+        foreach(Quiz quiz in temp)
+        {
+            quizzes.Add(quiz);
+        }
+
     }
 
     

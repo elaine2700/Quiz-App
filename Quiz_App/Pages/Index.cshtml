@@ -10,12 +10,13 @@
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <div class="items-list">
-        @foreach (Quiz quiz in Model.quizzes)
+        @for (int i = 0; i< Model.quizzes.Count<Quiz>(); i++)
         {
+                
             <div>
-                <h2>@quiz.Title</h2>
+                <h2>@Model.quizzes[i].Title</h2>
                 <div class="img-container"></div>
-                <a asp-page="/QuizPage">Answer Quiz</a>
+                <a asp-page="/QuizPage" asp-route-quizIndex=@i>Answer Quiz</a>
             </div>
         }
     </div>

@@ -9,7 +9,7 @@ namespace Quiz_App.Models
         public string? Title { get; set; }
 
         [JsonPropertyName("Questions")]
-        public IEnumerable<Question>? Questions { get; set; }
+        public List<Question>? Questions { get; set; }
 
         [JsonPropertyName("img")]
         public string? Image { get; set; }
@@ -25,6 +25,9 @@ namespace Quiz_App.Models
 
         [JsonPropertyName("answers")]
         public List<string>? PossibleAnswers { get; set; }
+
+        [JsonPropertyName("correct")]
+        public int? Correct { get; set; }
 
     }
 }

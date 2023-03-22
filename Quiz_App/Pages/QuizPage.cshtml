@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "/QuizPage/{quizIndex}"
 @model QuizPageModel
 @using Quiz_App.Models
 @{
@@ -6,10 +6,55 @@
 }
 
 <div>
-
-    @if (Model.quizzes != null)
+    @if (Model.finishedQuiz)
     {
-        <h1>@Model.quizzes[0].Title</h1>
+            <div>
+                <h2>You Finished the quiz</h2>
+                <p>Score: 5/10</p>
+                <a asp-page="/Index">Choose another quiz</a>
+                
+            </div>
+    }
+    else
+    {
+        <p>@Model.QuizIndex</p>
+        @if (Model.quizzes != null)
+        {
+            @if (Model.CurrentQuiz != null)
+            {
+                <h1>@Model.CurrentQuiz.Title</h1>
+
+                @if (Model.CurrentQuiz.Questions != null)
+                {
+                    for (int i = 0; i < Model.CurrentQuiz.Questions.Count; i++)
+                    {
+                        if (Model.CurrentQuestion == i)
+                        {
+                            <form asp-route-quizIndex=@(Model.QuizIndex) asp-route-currentQuestion=@(Model.CurrentQuestion + 1) method="post">
+                                <h2>@Model.CurrentQuiz.Questions[i].question</h2>
+                                @{
+                                    int counter = 0;
+                                }
+
+
+                                @foreach (string answer in Model.CurrentQuiz.Questions[i].PossibleAnswers)
+                                {
+                                    <input type="radio" asp-for="userAnswer" value=@(counter) />
+                                    <label asp-for="userAnswer">@answer</label>
+                                    counter++;
+
+                                }
+                                <button type="submit" class="btn-submit">Submit</button>
+
+                            </form>
+                        }
+                    }
+                }
+
+            }
+
+        }
+
     }
 
 

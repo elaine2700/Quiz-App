@@ -8,7 +8,8 @@
           "a1",
           "a2",
           "a3"
-        ]
+        ],
+        "correct": 1
       },
       {
         "question": "Hello 2",
@@ -16,7 +17,8 @@
           "answer 1",
           "answer 2",
           "answer 3"
-        ]
+        ],
+        "correct": 3
       },
       {
         "question": "Is this interesting?",
@@ -24,7 +26,8 @@
           "answer 1",
           "answer 2",
           "answer 3"
-        ]
+        ],
+        "correct": 2
       }
 
     ],
@@ -37,10 +40,11 @@
       {
         "question": "Hello",
         "answers": [
-          "a1",
-          "a2",
-          "a3"
-        ]
+          "Is this an answer?",
+          "Answer me!",
+          "No"
+        ],
+        "correct": 2
       },
       {
         "question": "Hello",
@@ -48,7 +52,8 @@
           "answer 1",
           "answer 2",
           "answer 3"
-        ]
+        ],
+        "correct": 3
       },
       {
         "question": "Is this interesting?",
@@ -56,7 +61,8 @@
           "answer 1",
           "answer 2",
           "answer 3"
-        ]
+        ],
+        "correct": 2
       }
 
     ],
@@ -72,7 +78,8 @@
           "a1",
           "a2",
           "a3"
-        ]
+        ],
+        "correct": 1
       },
       {
         "question": "Hello",
@@ -80,7 +87,8 @@
           "answer 1",
           "answer 2",
           "answer 3"
-        ]
+        ],
+        "correct": 1
       },
       {
         "question": "Is this interesting?",
@@ -88,7 +96,8 @@
           "answer 1",
           "answer 2",
           "answer 3"
-        ]
+        ],
+        "correct": 2
       }
 
     ],
