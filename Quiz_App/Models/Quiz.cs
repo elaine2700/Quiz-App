@@ -13,8 +13,6 @@ namespace Quiz_App.Models
 
         [JsonPropertyName("img")]
         public string? Image { get; set; }
-
-        public int currentQuestion { get; set; }
         
 	}
 

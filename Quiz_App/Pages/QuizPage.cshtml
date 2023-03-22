@@ -5,10 +5,10 @@
     ViewData["Title"] = "Quiz";
 }
 
-<div>
+<div class="quiz-container">
     @if (Model.finishedQuiz)
     {
-            <div>
+            <div class="text-center">
                 <h2>You Finished the quiz</h2>
                 <p>Score: 5/10</p>
                 <a asp-page="/Index">Choose another quiz</a>
@@ -17,12 +17,16 @@
     }
     else
     {
-        <p>@Model.QuizIndex</p>
+        
         @if (Model.quizzes != null)
         {
             @if (Model.CurrentQuiz != null)
             {
-                <h1>@Model.CurrentQuiz.Title</h1>
+                
+                <div class="quiz-header">
+                    <h1 class="quiz-title">@Model.CurrentQuiz.Title</h1>
+                    <p>@(Model.CurrentQuestion + 1) / @Model.CurrentQuiz.Questions.Count</p>
+                </div>
 
                 @if (Model.CurrentQuiz.Questions != null)
                 {
@@ -30,8 +34,8 @@
                     {
                         if (Model.CurrentQuestion == i)
                         {
-                            <form asp-route-quizIndex=@(Model.QuizIndex) asp-route-currentQuestion=@(Model.CurrentQuestion + 1) method="post">
-                                <h2>@Model.CurrentQuiz.Questions[i].question</h2>
+                            <form class="quiz-question-form" asp-route-quizIndex=@(Model.QuizIndex) asp-route-currentQuestion=@(Model.CurrentQuestion + 1) method="post">
+                                <h2 class="question">@Model.CurrentQuiz.Questions[i].question</h2>
                                 @{
                                     int counter = 0;
                                 }
@@ -39,12 +43,15 @@
 
                                 @foreach (string answer in Model.CurrentQuiz.Questions[i].PossibleAnswers)
                                 {
-                                    <input type="radio" asp-for="userAnswer" value=@(counter) />
-                                    <label asp-for="userAnswer">@answer</label>
+                                    <div class="possible-answer">
+                                        <input type="radio" asp-for="userAnswer" value=@(counter) />
+                                        <label asp-for="userAnswer">@answer</label>
+
+                                    </div>
                                     counter++;
 
                                 }
-                                <button type="submit" class="btn-submit">Submit</button>
+                                <button type="submit" class="btn-submit center space-top">Submit</button>
 
                             </form>
                         }

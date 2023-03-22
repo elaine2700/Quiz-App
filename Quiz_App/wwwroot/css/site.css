@@ -1,9 +1,26 @@
-﻿html {
-  font-size: 14px;
+﻿*{
+    box-sizing: border-box;
+    border: none;
+    box-shadow: none;
+    margin: 0;
 }
 
-a {
+html, body {
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+}
+
+a, button {
     display:block;
+    appearance: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
 }
 
 @media (min-width: 768px) {
@@ -22,7 +39,6 @@ body {
 }
 
 .items-list{
-    color: white;
     display:flex;
     gap: 1em;
     flex: 1;
@@ -31,9 +47,9 @@ body {
 }
 
     .items-list > * {
-        background-color: black;
         border-radius: 10px;
-        
+        border: solid black 1px;
+        overflow: hidden;
     }
 
 .img-container{
@@ -47,10 +63,78 @@ body {
     transition-duration: 0.5s;
 }
     .items-list a:hover {
-        background-color: gray;
+        background-color: black;
         transition-duration: 0.5s;
     }
     .items-list a:active {
-        background-color: lightgray;
+        background-color: gray;
         transition-duration: 0.5s;
     }
+
+.quiz-container{
+     width: 65vw;
+     max-width: 500px;
+     margin-left: auto;
+     margin-right: auto;
+     border: 1px solid black;
+     border-radius: 10px;
+     padding: 1rem;
+     
+}
+
+.quiz-header{
+    display:flex;
+    justify-content: space-between;
+}
+    .quiz-header > * {
+        padding: 10px;
+        font-size: 0.8rem;
+  
+    }
+
+    quiz-header > quiz-title{
+        text-align: center;
+    }
+
+
+.quiz-question-form{
+    min-height: 300px;
+}
+
+.question{
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+.possible-answer{
+    padding: 10px;
+    margin-top: 5px;
+    border: black 1px solid;
+    border-radius: 10px;
+}
+
+    .possible-answer:has(input:checked) {
+        background-color: black;
+        color: white;
+    }
+
+.center{
+    margin: auto;
+}
+
+.space-top{
+    margin-top: 10px;
+}
+
+.btn-submit{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 200px;
+}
+.btn-submit:hover{
+    background-color: gray;
+    border: 1px solid black;
+}
