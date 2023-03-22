@@ -6,8 +6,12 @@
 }
 
 <div>
-    
-    <h1>@Model.quiz.Title</h1>
-    
+
+    @if (Model.quizzes != null)
+    {
+        <h1>@Model.quizzes[0].Title</h1>
+    }
+
+
 </div>
 
