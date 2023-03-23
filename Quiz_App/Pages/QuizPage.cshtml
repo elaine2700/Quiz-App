@@ -10,7 +10,7 @@
     {
             <div class="text-center">
                 <h2>You Finished the quiz</h2>
-                <p>Score: 5/10</p>
+                <p>Score: @Model.Score / @Model.CurrentQuiz.Questions.Count</p>
                 <a class="btn-submit center space-top" asp-page="/Index">Choose another quiz</a>
             </div>
     }
@@ -33,7 +33,7 @@
                     {
                         if (Model.CurrentQuestion == i)
                         {
-                            <form class="quiz-question-form" asp-route-quizIndex=@(Model.QuizIndex) asp-route-currentQuestion=@(Model.CurrentQuestion + 1) method="post">
+                            <form class="quiz-question-form" asp-route-quizIndex=@(Model.QuizIndex) asp-route-currentQuestion=@Model.CurrentQuestion asp-route-currentScore="@Model.Score" method="post">
                                 <h2 class="question">@Model.CurrentQuiz.Questions[i].question</h2>
                                 @{
                                     int counter = 0;

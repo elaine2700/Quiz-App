@@ -79,7 +79,7 @@
           "<javascript>",
           "<script>"
         ],
-        "correct": 1
+        "correct": 2
       },
       {
         "question": "How do you create a function in Javascript?",
